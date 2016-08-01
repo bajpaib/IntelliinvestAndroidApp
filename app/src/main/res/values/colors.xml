@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="basecolor">#CB0814</color>
+    <color name="black">#000000</color>
+    <color name="darkred">#980006</color>
+    <color name="baseWhite">#F1F1F1</color>
+    <color name="tabsScrollColor">#004D40</color>
+    <color name="lighter_gray">#aaa</color>
+    <color name="green">#228b22</color>
+    <color name="white">#ffffff</color>
+    <color name="darkgreen">#6dc066</color>
+    <!--<color name="theme_light">#7D9EC0</color>-->
+    <!--<color name="theme_background">#F8F8F8</color>-->
+    <!--<color name="theme_dark">#3D59AB</color>-->
+    <color name="theme_light">#CDA2D0</color>
+    <color name="theme_dark">#703673</color>
+    <color name="theme_status_bar">#703665</color>
+    <color name="background_light">#E5E5E5</color>
+</resources>
+
+    <!--005B9B-->

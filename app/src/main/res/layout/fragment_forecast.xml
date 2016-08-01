@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.intelli.Fragments.ForecastFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/background_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_light"
+            android:layout_alignParentTop="true">
+
+            <!--<Spinner-->
+                <!--android:id="@+id/forecastTypeSpinner"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:popupBackground="@color/theme_dark"/>-->
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/forecastTypeTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/theme_dark"
+                tabMode="fixed" />
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartViewForecast"
+            android:layout_width="match_parent"
+            android:layout_marginTop="55dp"
+            android:background="@color/white"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chartViewForecast"
+            android:layout_marginTop="10dp"
+            android:text="Description"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/frequencyTypeTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/theme_dark"
+            android:layout_alignParentBottom="true"
+            android:background="@color/baseWhite"
+            tabMode="fixed" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intelli.Fragments.PortfolioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/analysisTypeScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/theme_light"
+            android:scrollbars="none"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/overallBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="Overall"/>
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:background="@color/theme_dark"
+                    android:layout_alignParentBottom="true"/>
+
+                <Button
+                    android:id="@+id/exchangeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="Exchange Rate"
+                    android:layout_toRightOf="@id/overallBtn"/>
+
+                <Button
+                    android:id="@+id/interestBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="Interest Rate"
+                    android:layout_toRightOf="@+id/exchangeBtn"/>
+
+                <Button
+                    android:id="@+id/gdpBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="GDP"
+                    android:layout_toRightOf="@+id/interestBtn"/>
+
+                <Button
+                    android:id="@+id/fdiBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="FDI &amp; FII"
+                    android:layout_toRightOf="@+id/gdpBtn"/>
+
+                <Button
+                    android:id="@+id/inflationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:text="Inflation"
+                    android:layout_toRightOf="@id/fdiBtn"/>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/analysisTypeScroll">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_light"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:weightSum="4">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Stock Code"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Invested Value"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Change %"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="Signal"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </ScrollView>
+        <!--<ListView-->
+            <!--android:id="@+id/portFolioList"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/scrollView"/>-->
+        <ExpandableListView
+            android:id="@+id/portFolioList"
+            android:background="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scrollView"
+            android:groupIndicator="@null"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentBottom="true">
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/theme_dark"
+                android:layout_alignParentTop="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Risk"/>
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/theme_dark"
+                android:layout_alignParentBottom="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Edit"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Sell"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

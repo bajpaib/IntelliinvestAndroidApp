@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_analysis"
+            android:title="Analysis" />
+        <item
+            android:id="@+id/nav_addon"
+            android:title="Addon" />
+        <item
+            android:id="@+id/nav_personalize"
+            android:title="Personalize" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_portfolio"-->
+            <!--android:title="Portfolio" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_watchlist"-->
+            <!--android:title="Watchlist" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_suggest"-->
+            <!--android:title="Suggest" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_riskreturn"-->
+            <!--android:title="Risk Return" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_feedback"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Feedback" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_setting"-->
+            <!--android:icon="@drawable/icon_setting"-->
+            <!--android:title="Settings" />-->
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_help"-->
+                <!--android:icon="@drawable/icon_help"-->
+                <!--android:title="Help" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_contact"-->
+                <!--android:icon="@drawable/icon_phone"-->
+                <!--android:title="Contact" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_logout"-->
+                <!--android:icon="@drawable/icon_logout"-->
+                <!--android:title="Logout" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

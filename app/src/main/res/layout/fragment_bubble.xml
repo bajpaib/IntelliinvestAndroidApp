@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intelli.Fragments.BubbleFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/background_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_light"
+            android:layout_alignParentTop="true">
+
+            <Spinner
+                android:id="@+id/bubbleTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:popupBackground="@color/theme_dark"/>
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartViewBubble"
+            android:layout_width="match_parent"
+            android:layout_marginTop="55dp"
+            android:background="@color/white"
+            android:layout_height="300dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chartViewBubble"
+            android:layout_marginTop="10dp"
+            android:text="Description"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

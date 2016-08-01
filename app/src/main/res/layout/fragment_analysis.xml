@@ -1,0 +1,395 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="630dp"
+    tools:context="com.intelli.Fragments.AnalysisFragment">
+
+    <LinearLayout
+        android:background="@color/background_light"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:weightSum="3"
+        android:minHeight="630dp"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:minHeight="200dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_row_border"
+                android:layout_weight="1"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab1Front">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_analysis"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Macro Analysis"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image1"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab1Back"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check what the macro trends are"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_row_border"
+                android:layout_weight="1"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab2Front">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_analysis"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Industrial Analysis"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image2"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab2Back"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Industrial Analysis description"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:minHeight="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/tab3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_row_border"
+                android:layout_weight="1"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab3Front">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_analysis"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fundamental Analysis"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image3"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab3Back"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fundamental Analysis description"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_row_border"
+                android:layout_weight="1"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab4Front">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_analysis"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technical Analysis"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image4"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab4Back"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technical Analysis description"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:minHeight="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+
+            <RelativeLayout
+                android:id="@+id/tab5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_row_border"
+                android:layout_weight="1"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab5Front">
+
+                    <ImageView
+                        android:id="@+id/image5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_analysis"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Is it bubble yet?"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image5"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab5Back"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Is it bubble yet  description"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/tab_row_border"
+                android:layout_weight="1"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab6Front">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/icon_analysis"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forecasting"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/image6"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab6Back"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forecasting description"
+                        android:layout_marginTop="10dp"
+                        android:typeface="sans"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<ExpandableListView-->
+            <!--android:divider="@android:color/transparent"-->
+            <!--android:id="@+id/analysisTabList"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:groupIndicator="@null"-->
+            <!--/>-->
+    </LinearLayout>
+
+</FrameLayout>

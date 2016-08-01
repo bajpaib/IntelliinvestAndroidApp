@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:weightSum="4">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/stockCodeTxt"
+        android:textSize="15dp"
+        android:text="Stock Code"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:id="@+id/investedTxt"
+        android:text="Invested"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:id="@+id/changeTxt"
+            android:drawableRight="@drawable/arrow_up"
+            android:drawablePadding="0dp"
+            android:padding="0dp"
+            android:text="Change %"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:id="@+id/signalTxt"
+        android:text="Signal"/>
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/icon_plus"
+        android:id="@+id/iconExpand"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>
